@@ -251,30 +251,44 @@ function showNotification(message, type = 'info') {
 }
 
 // Typing animation for hero title
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = '';
-    
+function typeWriter(element, text, speed = 50) {
+    let index = 0;
+    element.textContent = '';
+
     function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
+        if (index >= text.length) return;
+
+        const currentChar = text.charAt(index);
+        element.textContent += currentChar;
+        index++;
+
+        const isWhitespace = currentChar === ' ' || currentChar === '\n' || currentChar === '\t';
+        const delay = isWhitespace ? 0 : speed;
+        setTimeout(type, delay);
     }
-    
+
     type();
 }
+
+// Prepare hero title to avoid initial flash of text
+document.addEventListener('DOMContentLoaded', () => {
+    const heroTitle = document.querySelector('.hero-title');
+    if (!heroTitle) return;
+
+    const originalText = heroTitle.textContent.trim();
+    heroTitle.dataset.originalText = originalText;
+    heroTitle.textContent = '';
+    heroTitle.style.visibility = 'hidden';
+});
 
 // Initialize typing animation when page loads
 window.addEventListener('load', () => {
     const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        const originalText = heroTitle.textContent;
-        setTimeout(() => {
-            typeWriter(heroTitle, originalText, 50);
-        }, 1000);
-    }
+    if (!heroTitle) return;
+
+    const textToType = heroTitle.dataset.originalText || '';
+    heroTitle.style.visibility = 'visible';
+    typeWriter(heroTitle, textToType, 50);
 });
 
 // Add loading animation
