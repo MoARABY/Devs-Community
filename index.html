@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devs - Programming Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="icon" -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <!-- <h2>Devs</h2> -->
+                <img src="./images/devs3.png" alt="Devs Community Logo" class="nav-logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#events" class="nav-link">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#team" class="nav-link">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="stars"></div>
+            <div class="floating-elements">
+                <div class="element element-1"></div>
+                <div class="element element-2"></div>
+                <div class="element element-3"></div>
+                <div class="element element-4"></div>
+                <div class="element element-5"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Welcome to</span>
+                    <span class="title-line highlight">Devs</span>
+                    <span class="title-line">Community</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Join the future of programming with cutting-edge courses, 
+                    innovative events, and a community of passionate developers.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-animation">
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Devs</h2>
+                <p class="section-subtitle">Together Making Career 🚀🤩</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Who We Are</h3>
+                        <p>student activity created in 2022 to empower tech students by helping them level up their programming skills, work on real projects, and get ready for the job market. Our work is divided into several parts including Programming, HR, Lecturers, and Media.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>What We Do</h3>
+                        <p>We organize wide programming seminars and intensive bootcamps to explore different fields of programming, where both HRs and instructors participate voluntarily under real-work standards We also run professional media workshops executed as full campaigns just like in real companies, in addition to hosting large competitive contests that enhance the essential soft skills required in the job market.</p>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="floating-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Courses</h2>
+                <p class="section-subtitle">Master the technologies that shape tomorrow</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React Development</h3>
+                    <p>Build modern web applications with React and master component-based architecture.</p>
+                    <div class="course-meta">
+                        <span class="duration">4 weeks</span>
+                        <span class="level">Intermediate</span>
+                    </div>
+                    <button class="course-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Network CCNA</h3>
+                    <p>Learn core networking concepts and configure Cisco devices for reliable, secure networks.</p>
+                    <div class="course-meta">
+                        <span class="duration">4 weeks</span>
+                        <span class="level">Beginner</span>
+                    </div>
+                    <button class="course-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js Backend</h3>
+                    <p>Create scalable server-side applications with Node.js and modern JavaScript.</p>
+                    <div class="course-meta">
+                        <span class="duration">4 weeks</span>
+                        <span class="level">Advanced</span>
+                    </div>
+                    <button class="course-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Dive into artificial intelligence, machine learning algorithms, and data analysis.</p>
+                    <div class="course-meta">
+                        <span class="duration">8 weeks</span>
+                        <span class="level">Intermediate</span>
+                    </div>
+                    <button class="course-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Build cross-platform mobile apps with Flutter.</p>
+                    <div class="course-meta">
+                        <span class="duration">4 weeks</span>
+                        <span class="level">Beginner</span>
+                    </div>
+                    <button class="course-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Learn ethical hacking, security protocols, and protect digital assets.</p>
+                    <div class="course-meta">
+                        <span class="duration">8 weeks</span>
+                        <span class="level">Intermediate</span>
+                    </div>
+                    <button class="course-btn">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Events</h2>
+                <p class="section-subtitle">Connect, learn, and grow together</p>
+            </div>
+            <div class="events-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">22</span>
+                        <span class="month">Sep</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Devs Stage</h3>
+                        <p>Competitive presentation contest judged by professors and senior engineers to build students’ soft and communication skills.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Online Event</span>
+                            <span><i class="fas fa-users"></i> 40+ participants</span>
+                        </div>
+                        <button class="event-btn">Join</button>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">10</span>
+                        <span class="month">Oct</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Devs Station</h3>
+                        <p>Annual tech event hosting expert speakers across different fields to inspire and guide future developers.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Ismailia, creativa</span>
+                            <span><i class="fas fa-users"></i> 100+ attendees</span>
+                        </div>
+                        <button class="event-btn">Register</button>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">??</span>
+                        <span class="month">???</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Coming soon</h3>
+                        <p>Wait for it</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Online Event</span>
+                            <span><i class="fas fa-users"></i> ???+ participants</span>
+                        </div>
+                        <button class="event-btn">Join</button>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="date">??</span>
+                        <span class="month">???</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Coming soon</h3>
+                        <p>Wait for it</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Virtual</span>
+                            <span><i class="fas fa-users"></i> ???+ viewers</span>
+                        </div>
+                        <button class="event-btn">Attend</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Team</h2>
+                <p class="section-subtitle">Meet the experts behind Devs</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/team-1.jpg" alt="Mohamed Araby - Founder & CEO" class="team-photo">
+                    </div>
+                    <div class="team-info">
+                        <h3>Mohamed Araby</h3>
+                        <p class="team-role">Founder & CEO</p>
+                        <p class="team-bio">Backend developer with 3+ years of experience in .NET and Node.js.</p>
+                        <div class="team-social">
+                            <a href="https://www.linkedin.com/in/mohamed-araby-ma7/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/MoARABY" target="_blank"><i class="fab fa-github"></i></a>
+                            <!-- <a href="https://www.facebook.com/profile.php?id=100007243208354" target="_blank"><i class="fab fa-facebook"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/team-2.jpg" alt="Huda Qasem - Team Vice Leader" class="team-photo">
+                    </div>
+                    <div class="team-info">
+                        <h3>Huda Qasem</h3>
+                        <p class="team-role">Team Vice Leader</p>
+                        <p class="team-bio">Backend developer with 3+ years of experience in .NET and Node.js.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/team-3.jpg" alt="Mohamed Salama - HR Head" class="team-photo">
+                    </div>
+                    <div class="team-info">
+                        <h3>Mohamed Salama</h3>
+                        <p class="team-role">HR Head</p>
+                        <p class="team-bio">Backend developer with 3+ years of experience in .NET and Node.js.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/team-4.jpg" alt="Mohamed Maged - Logistics Head" class="team-photo">
+                    </div>
+                    <div class="team-info">
+                        <h3>Mohamed Maged</h3>
+                        <p class="team-role">Logistics Head</p>
+                        <p class="team-bio">Backend developer with 3+ years of experience in .NET and Node.js.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/team-5.jpg" alt="Ibrahim Essam - Media Head" class="team-photo">
+                    </div>
+                    <div class="team-info">
+                        <h3>Ibrahim Essam</h3>
+                        <p class="team-role">Media Head</p>
+                        <p class="team-bio">Backend developer with 3+ years of experience in .NET and Node.js.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/team-6.jpg" alt="Ahmed Ashraf - IT Head" class="team-photo">
+                    </div>
+                    <div class="team-info">
+                        <h3>Ahmed Ashraf</h3>
+                        <p class="team-role">IT Head</p>
+                        <p class="team-bio">Backend developer with 3+ years of experience in .NET and Node.js.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch and join our community</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>devscommunity13.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+20 1012209503</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/devscommunity23" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/devscommunity23" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/devscommunity23" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.facebook.com/devscommunity23" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/devscommunity23" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/devs3.png" alt="Devs Community Logo" class="footer-logo-img">
+                    <p>Together Making Career 🚀🤩</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Courses</h4>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Mobile Apps</a></li>
+                            <li><a href="#">AI & ML</a></li>
+                            <li><a href="#">Cybersecurity</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">competition</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Devs Community. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
